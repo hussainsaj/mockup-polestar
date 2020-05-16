@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Polestar car showcase">
+        <meta name="keywords" content="Car, Electric, Performance">
+        <meta name="author" content="Hussain Sajid">
+		<title>Polestar</title>
+		<link rel="stylesheet" href="src/styles.css">
+    </head>
+    
+	<body>
+        <div class='side-menu nav'>
+            <a href="javascript:void(0)" class="closebtn" onclick="moveNav('close')">&times;</a>
+            <div class='sidenav-content'>
+                <a class='header' href='#'>Home</a>
+                <a class='header' onclick="moveNav('Polestar 1')">Polestar 1</a>
+                <a class='header' onclick="moveNav('Polestar 2')">Polestar 2</a>
+                <a class='header' href='#'>News</a>
+                <a class='header' href='#'>My account</a>
+                <div class = 'row'>
+                    <div class='column'>
+                        <a href='#'>About</a>
+                        <a href='#'>Legal</a>
+                        <a href='#'>Polestar.com</a>
+                    </div>
+                    <div class='column'>
+                        <a href='#'>Support</a>
+                        <a href='#'>Media</a>
+                        <a href='#'>Fleet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="navbar">
+            <div class='nav-bar-content'>
+                <span class='nav-icon' onclick="moveNav('open')">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </span>
+                <a class='home header' href='#'>Polestar</a>
+            </div>
+        </div>
+
+        <main>
+            <div class='panel showcase-panel'>
+                <picture>
+                    <source media="(min-width: 960px)" srcset="./img/polestar-2-full.png">
+                    <img src="./img/polestar-2-lite.png" alt="Polestar 2">
+                </picture>
+                <div class='panel-content'>
+                    <div class='title'>
+                        <p class='header'>Polestar 2</p>
+                        <div class='line'></div>
+                        <p class='header'>A fully electric, 5-door fastback.</p>
+                        <a class='sub' href='#'>Learn more <i class="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class='panel showcase-panel'>
+                <picture>
+                    <source media="(min-width: 960px)" srcset="./img/polestar-1-full.png">
+                    <img src="./img/polestar-1-lite.png" alt="Polestar 1">
+                </picture>
+                <div class='panel-content'>
+                    <div class='title'>
+                        <p class='header'>Polestar 1</p>
+                        <div class='line'></div>
+                        <p class='header'>An electric performance hybrid, made without compromise.</p>
+                        <a class='sub' href='#'>Learn more <i class="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class='panel'>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/concept-full.jpg">
+                    <img src="./img/concept-lite.jpg" alt="Polestar Precept">
+                </picture>
+                <div class='panel-content'>
+                    <div class='title'>
+                        <p class='header'>Polestar Precept</p>
+                    </div>
+                    <div class='text'>
+                        <p class='sub'>Learn about our aspirations, our thoughts, our ambitions, and where they all come together, by clicking below.</p>
+                        <a class='sub' href='#'>Discover <i class="arrow-right"></i></a>  
+                    </div>
+                </div>      
+            </div>
+            <div class='panel about'>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/hq-outside-full.jpeg">
+                    <img src="./img/hq-outside-lite.jpeg" alt="Headquaters">
+                </picture>
+                <div class='panel-content'>
+                    <div class='title'>
+                        <p class='header'>About</p>
+                        <p class='sub'>We are an electric performance car brand, determined to improved the society we live in.</p>
+                        <a class='sub' href='#'>Read more <i class="arrow-right"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <div class='panel quote'>
+                <div class='panel-content'>
+                    <div class='title'>
+                        <p class='header'>This is Polestar</p>
+                    </div>
+                    <div class='text'>
+                        <p class='header'>Polestar is an electric performance car brand unlike any other. We innovate to drive progress and create a better future, a future that is sustainable, hassle free and strikingly beautiful. We share technology and engineering expertise with the Volvo Car Group, yet we go our own way as a guiding star.</p>
+                        <p class='header'>At Polestar, we say "Goodbye Normal".</p>
+                    </div>
+                </div>
+            </div>
+            <div class='panel'>
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./img/showroom-inside-full.jpg">
+                    <img src="./img/showroom-inside-lite.jpg" alt="Inside the showroom">
+                </picture>
+                <div class='panel-content'>
+                    <div class='title'>
+                        <p class='header'>Spaces</p>
+                    </div>
+                    <div class='text'>
+                        <p class='sub'>Polestar has a new take on automotive retail. Centrally located, staffed with product specialists, and echoing the design language of everything Polestar, our spaces put the cars at the center of the experience - where they should be.</p>
+                        <a class='sub' href='#'>Discover our current spaces <i class="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class='panel newsletter-panel'>
+                <div class='panel-content'>
+                    <div class='title'>
+                        <p class='header'>Stay up to date on the latest Polestar news.</p>
+                    </div>
+                    <div class='text'>
+                        <p class='sub'>Our newsletters are a concentrated blast of all the latest from Polestar: news, events, product information, and more.</p>
+                        <a class='sub' href='#'>Subscribe <i class="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class='footer-content quick-links'>
+                <div class='footer-column'>
+                    <p class='collapsible'><i class="arrow-expand"></i>Polestar.com</p>
+                    <div class='list'>
+                        <p><a class='greyed' href='#'>Home</a></p>
+                        <p><a class='greyed' href='#'>Polestar 1</a></p>
+                        <p><a class='greyed' href='#'>Polestar 2</a></p>
+                        <p><a class='greyed' href='#'>News</a></p>
+                    </div>
+                    <div class = 'divider'></div>
+                </div>
+                <div class='footer-column'>
+                    <p class='collapsible'><i class="arrow-expand"></i>Polestar</p>
+                    <div class='list'>
+                        <p><a class='greyed' href='#'>Support</a></p>
+                        <p><a class='greyed' href='#'>Media</a></p>
+                        <p><a class='greyed' href='#'>Contact us</a></p>
+                        <p><a class='greyed' href='#'>Cookies</a></p>
+                        <p><a class='greyed' href='#'>Privacy</a></p>
+                        <p><a class='greyed' href='#'>Legal</a></p>
+                    </div>
+                    <div class = 'divider'></div>
+                </div>
+                <div class='footer-column'>
+                    <p class='collapsible'><i class="arrow-expand"></i>Social</p>
+                    <div class='list'>
+                        <p><a class='greyed' href='#'>Facebook</a></p>
+                        <p><a class='greyed' href='#'>Instagram</a></p>
+                        <p><a class='greyed' href='#'>Twitter</a></p>
+                        <p><a class='greyed' href='#'>Youtube</a></p>
+                    </div>
+                    <div class = 'divider'></div>
+                </div>
+                <div class='footer-column'>
+                    <p class='collapsible'><i class="arrow-expand"></i>Discover</i></p>
+                    <div class='list'>
+                        <p><a class='greyed' href='#'>Download App</a></p>
+                        <p><a class='greyed' href='#'>Careers</a></p>
+                        <p><a class='greyed' href='#'>FAQ</a></p>
+                        <p><a class='greyed' href='#'>Developer</a></p>
+                    </div>
+                    <div class = 'divider'></div>
+                </div>
+            </div>
+            <div class = 'desktop-divider'></div>
+            <div class='footer-content copyright-location'>
+                <p>Change location: <a onclick="displayCountrySelect('open')">United Kingdom <i class="arrow-right"></i></a></p>
+                <p class='greyed'>Polestar © 2020 All rights reserved</p>
+            </div>
+            <div id="country-select" class="side-menu county-panel">
+                <a href="javascript:void(0)" class="closebtn" onclick="displayCountrySelect('close')">&times;</a>
+                <div class='county-panel-content'>
+                    <div class='section'>
+                        <p class='header'>Select your region</p>
+                    </div>
+                    <div class='countries'>
+                        <div class='section'>
+                            <p class='header'>Europe</p>
+                            <ul>
+                                <li><a class='sub' href='#'>Sverige</a></li>
+                                <li><a class='sub' href='#'>Norge</a></li>
+                                <li><a class='sub' href='#'>Deutschland</a></li>
+                                <li><a class='sub' href='#'>Belgique <span class='greyed'>| Français</span></a></li>
+                                <li><a class='sub' href='#'>België <span class='greyed'>| Nederlands</span></a></li>
+                                <li><a class='sub' href='#'>United Kingdon</a></li>
+                                <li><a class='sub' href='#'>Switzerland <span class='greyed'>| English</span></a></li>
+                                <li><a class='sub' href='#'>Schweiz <span class='greyed'>| Deutsch</span></a></li>
+                                <li><a class='sub' href='#'>Suisse <span class='greyed'>| Français</span></a></li>
+                            </ul>
+                        </div>
+                        <div class='section'>
+                            <p class='header'>Americas</p>
+                            <ul>
+                                <li><a class='sub' href='#'>United States</a></li>
+                                <li><a class='sub' href='#'>Canada <span class='greyed'>| Français</span></a></li>
+                                <li><a class='sub' href='#'>Canada <span class='greyed'>| English</span></a></li>
+                            </ul>
+                        </div>
+                        <div class='section'>
+                            <p class='header'>Asia-Pacific</p>
+                            <ul>
+                                <li><a class='sub' href='#'>中国</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="src/scripts.js"></script>
+	</body>
+</html>

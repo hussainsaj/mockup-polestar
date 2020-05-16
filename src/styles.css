@@ -1,0 +1,393 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    background-color: white;
+    margin: 0 auto 0 auto;
+    padding:0;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    font-size: 28px;
+}
+
+.sub {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0px;
+}
+
+.noscroll{
+    position:fixed;
+    overflow:hidden;
+}
+
+.side-menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    padding-top: 60px;
+}
+
+.nav {
+    left: -100%;
+    background-color: #101820;
+}
+
+.nav .header {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    transition: 1s;
+}
+
+.side-menu .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 36px;
+}
+
+.nav .closebtn {
+    color: rgba(255, 255, 255, 1);
+}
+
+.row {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 100px;
+}  
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column a {
+    padding: 10px 0px 10px 30px;
+}
+
+
+#navbar {
+    overflow: hidden;
+    background-color: inherit;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    transition: top 0.25s;
+    z-index: 1;
+}
+
+#navbar .nav-icon {
+    position: absolute;
+    padding-left: 40px;
+    padding-top: 25px;
+    width: 50px;
+    border: none;
+    background-color: inherit;
+}
+
+#navbar .nav-icon div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+#navbar .home {
+    float: right;
+    display: block;
+    color: black;
+    padding: 20px 6%;
+}
+
+
+main {
+    margin-top: 100px;
+}
+
+.panel {
+    padding: 0 0 40px 0;
+    right:0;
+    width:95%;
+    margin: 0 auto 30px auto;
+}
+
+.showcase-panel {
+    background-color: #F1F1F1;
+}
+
+.newsletter-panel {
+    background-color: #53565a;
+    color: white;
+}
+
+.panel-content {
+    padding: 0 10px 0 10px;
+}
+
+.showcase-panel .panel-content {
+    padding: 0 15px 0 15px;
+}
+
+img {
+    width:100%;
+}
+
+.panel p {
+    margin: 10px 0;
+}
+
+.showcase-panel p {
+    margin: 5px 0;
+}
+
+.showcase-panel .line {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 5px 0;
+}
+
+.panel a {
+    color: black;
+}
+
+.showcase-panel a, .newsletter-panel a {
+    padding: 15px 100px 15px 25px;
+    margin-top: 30px;
+    display: block;
+}
+
+.showcase-panel a {
+    color: white;
+    background-color: rgb(83, 86, 90);
+}
+
+.newsletter-panel a {
+    background-color: white;
+}
+
+.arrow-right {
+    border: solid orange;
+    border-width: 0 2px 2px 0px;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-45deg);
+}
+
+.quote {
+    color: #866d4b;
+}
+
+.newsletter-panel .panel-content{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+
+footer {
+    background-color: #ecece7;
+}
+
+.footer-content {
+    width: 90%;
+    margin: 0 auto 0 auto;
+    padding: 15px 0;
+}
+
+.greyed {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.county-panel .section {
+    padding-left: 32px;
+    margin-bottom: 50px;
+}
+
+.county-panel {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #ecece7;
+}
+
+.county-panel .closebtn {
+    color: rgba(0, 0, 0, 1);
+}
+
+.county-panel .header {
+    margin: 0;
+}
+
+.county-panel-content {
+    margin-bottom: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav {
+        width: 33%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .panel-content {
+        padding-top: 20px;
+    }
+
+    .copyright-location, .countries, .panel-content, .showcase-panel{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .showcase-panel {
+        flex-direction: row-reverse;
+        padding: 80px 0px;
+    }
+
+    .copyright-location p, .countries .section{
+        width: 40%;
+        margin-right: auto;
+    }
+
+    .title {
+        width: 35%;
+        padding-left: 2.5%;
+    }
+
+    .text {
+        width: 57.5%;
+        padding-right: 2.5%;
+        padding-left: 2.5%;
+    }
+
+    .showcase-panel .panel-content {
+        display: block;
+        width: 40%;
+        height: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .showcase-panel picture {
+        display: block;
+        width: 50%;
+    }
+
+    .showcase-panel .title, .showcase-panel .text {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about {
+        position: relative;
+    }
+
+    .about .panel-content{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .showcase-panel a, .newsletter-panel a {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    footer .list {
+        display: none;
+        overflow: hidden;
+    }
+    
+    footer .divider {
+        height: 1px;
+        background-color: black;
+        margin: 25px 0;
+    }
+    
+    .arrow-expand {
+        border: solid black;
+        border-width: 0 1px 1px 0px;
+        display: inline-block;
+        padding: 4.5px;
+        margin: 0 15px 0 15px;
+        transform: rotate(45deg);
+        transition: transform 0.25s;
+    }
+    
+    .active {
+        transform: rotate(-135deg);
+    }
+    
+    footer .arrow-right {
+        border: solid black;
+        border-width: 0 1px 1px 0px;
+        padding: 4.5px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .quick-links {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin-right: 0;
+        padding-top: 50px;
+    }
+
+    .footer-column {
+        width: 25%
+    }
+
+    .copyright-location {
+        padding-bottom: 5%;
+    }
+
+    .desktop-divider {
+        height: 1px;
+        width: 90%;
+        margin: 50px auto 0 auto;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .countries .section {
+        width: 30%;
+    }
+}
+
+main, .nav-bar-content, .footer-content {
+    max-width: 2000px;
+    margin: 0 auto 0 auto;
+}
